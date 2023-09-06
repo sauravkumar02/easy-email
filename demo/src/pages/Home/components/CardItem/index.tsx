@@ -73,7 +73,7 @@ export function CardItem(props: CardItemProps) {
           </div>
         ) : (
           <div className={styles.listBottom}>
-            <div className={styles.listItem}>
+            {/* <div className={styles.listItem}>
               <Popconfirm
                 title='Are you want to delete it?'
                 onConfirm={onDelete}
@@ -83,7 +83,7 @@ export function CardItem(props: CardItemProps) {
                 <IconDelete />
                 &nbsp;Delete
               </Popconfirm>
-            </div>
+            </div> */}
             <div className={styles.listItem}>
               <Link
                 to={`/editor?id=${data.article_id}&userId=${data.user_id}`}
@@ -98,11 +98,11 @@ export function CardItem(props: CardItemProps) {
                 &nbsp;Edit
               </Link>
             </div>
-            <div className={styles.listItem}>
+            {/* <div className={styles.listItem}>
               <Link to='javascript:void(0)' onClick={onDuplicate}>
                 Duplicate
               </Link>
-            </div>
+            </div> */}
           </div>
         )}
       </div>

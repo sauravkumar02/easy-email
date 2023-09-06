@@ -81,7 +81,7 @@ export interface IArticle {
   article_id: number;
   user_id: number;
   category_id: number;
-  tags: { tag_id: number; }[]; // 由于懒得写接口，这个接口是拿之前的，其实不需要数组
+  tags: { tag_id: number; }[]; 
   picture: string;
   title: string;
   summary: string;
